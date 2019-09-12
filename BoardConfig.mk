@@ -30,6 +30,7 @@ DEVICE_PATH := device/xiaomi/clover
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
 
 # Kernel
+BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init
 TARGET_KERNEL_SOURCE := kernel/xiaomi/clover
 TARGET_KERNEL_CONFIG := clover-perf_defconfig
 TW_USE_TOOLBOX := true
